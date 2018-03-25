@@ -1,0 +1,25 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='demo.productlisting'}"/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+            <div data-sly-use.products="${'com.aem.community.core.models.ProductListingModel' @mode='auto'}">
+                <h1>${products.sectionTitle}</h1>
+                <ul data-sly-list=${products.productList}>
+                    <li>
+                        <a href="${item.url}">
+                            <h4>Title :: ${item.title}</h4>
+                        </a>
+                        <p>Description :: ${item.description}</p>
+                        <p>Subtitle :: ${item.subTitle}</p>
+                    </li>
+                </ul>
+            </div>
+		</div>
+		<div class="col-md-6">
+			RIGHT DIV
+		</div>
+	</div>
+</div>
+
+

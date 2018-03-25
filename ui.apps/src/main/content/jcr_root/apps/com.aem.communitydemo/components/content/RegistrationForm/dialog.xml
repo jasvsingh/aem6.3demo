@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Demo Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Panel"
+                title="Demo Component Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <image
+                        jcr:primaryType="cq:Widget"
+                        cropParameter="./imageCrop"
+                        ddGroups="[media]"
+                        fieldLabel="Image"
+                        fileNameParameter="./fileName"
+                        fileReferenceParameter="./fileReference"
+                        height="150"
+                        name="./file"
+                        rotateParameter="./imageRotate"
+                        title="Image"
+                        width="200"
+                        xtype="html5smartimage"/>
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the title here"
+                        fieldLabel="Title"
+                        name="./title"
+                        required="{Boolean}true"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the Description"
+                        fieldLabel="Description"
+                        name="./description"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the path to link the image"
+                        fieldLabel="Link Image To"
+                        name="./link"
+                        xtype="pathfield"/>
+                </items>
+            </tab>
+            <secondTab
+                jcr:primaryType="cq:Panel"
+                title="Secondary Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the title here"
+                        fieldLabel="Name"
+                        name="./name"
+                        required="{Boolean}true"
+                        xtype="checkbox"/>
+                    <occupation
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the Description"
+                        fieldLabel="Occupation"
+                        name="./occupation"
+                        xtype="textfield"/>
+                    <link
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the path to link the image"
+                        fieldLabel="Link Image To"
+                        name="./link"
+                        xtype="pathfield"/>
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Color"
+                        name="./color"
+                        required="{Boolean}true"
+                        xtype="colorfield"/>
+                    <date
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Date"
+                        name="./date"
+                        required="{Boolean}true"
+                        xtype="datetime"/>
+                    <fileupload
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Upload File"
+                        name="./file"
+                        required="{Boolean}true"
+                        xtype="fileuploadfield"/>
+                    <htmleditor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Editor"
+                        name="./html"
+                        required="{Boolean}true"
+                        xtype="richtext"/>
+                    <multifield
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Multifield"
+                        name="./name"
+                        required="{Boolean}true"
+                        xtype="multifield"/>
+                    <number
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Number"
+                        name="./number"
+                        required="{Boolean}true"
+                        xtype="numberfield"/>
+                    <paragraphRef
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Paragraph Reference"
+                        name="./pararef"
+                        required="{Boolean}true"
+                        xtype="paragraphreference"/>
+                    <radio1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Radio"
+                        name="./radio"
+                        required="{Boolean}true"
+                        xtype="radio"/>
+                    <radio2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Radio"
+                        name="./radio"
+                        required="{Boolean}true"
+                        xtype="radio"/>
+                    <search
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Search"
+                        name="./search"
+                        required="{Boolean}true"
+                        xtype="searchfield"/>
+                    <selection
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select"
+                        name="./select"
+                        required="{Boolean}true"
+                        xtype="selection"/>
+                    <tags
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Tags"
+                        name="./tags"
+                        required="{Boolean}true"
+                        xtype="tags"/>
+                </items>
+            </secondTab>
+        </items>
+    </items>
+</jcr:root>

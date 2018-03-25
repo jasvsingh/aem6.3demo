@@ -1,0 +1,24 @@
+<div data-sly-use.prod="${'com.aem.community.core.models.ProductListingModel' @mode='manual'}">
+	<div class="row"> 
+    	<sly data-sly-list.myitem="${prod.productList}" data-sly-unwrap>
+           <div  class="col-sm-4 col-lg-4 col-md-4" >
+              <div class="thumbnail">
+                 <img src="${myitem.image}" alt="">
+                 <div class="caption">
+                    <h4 class="pull-right" >${myitem.title}</h4>
+                    <h4><a href="#">${myitem.subTitle}</a></h4>
+                    <p style="color:#${properties.color @context='styleToken'}">${myitem.price}</p>
+                 </div>
+              </div>
+           </div>
+    	</sly>
+        <div style="color:#{}"></div>
+   		<div class="col-sm-4 col-lg-4 col-md-4">
+      		<h4>
+                <a href="#">Like this template?</a>
+      		</h4>
+      		<p>If you like this template, then check out <a target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this tutorial</a> on how to build a working review system for your online store!</p>
+      		<a class="btn btn-primary" target="_blank" href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View Tutorial</a>
+   		</div>
+	</div>
+</div>

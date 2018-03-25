@@ -1,0 +1,17 @@
+Secondary Navigation
+<div data-sly-use.nav="${'com.aem.community.core.models.TopNavigationModel' @mode='secNavMenu'}">
+	<div class="container">
+    	<div class="row"> 
+			<ul data-sly-list.menuitem="${nav.menuList}">
+    	       	<li>
+        	       	<a href="${menuitem.url}">${menuitem.title}</a>
+                    <ul data-sly-list.flyoutmenuitem="${menuitem.flyoutMenuList}">
+                    	<li>
+                        	<a href="${flyoutmenuitem.url}.html">${flyoutmenuitem.title}</a>
+                       	</li>
+                    </ul>
+            	</li>
+           	</ul>
+       	</div>
+   	</div>
+</div>

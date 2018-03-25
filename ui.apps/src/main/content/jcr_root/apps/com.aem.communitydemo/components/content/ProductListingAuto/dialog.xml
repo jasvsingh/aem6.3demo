@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Product Listing Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <generalConfig
+                jcr:primaryType="cq:Panel"
+                title="General Config">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sectionTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please enter the section title here"
+                        fieldLabel="Section Title"
+                        name="./sectionTitle"
+                        xtype="textfield"/>
+                    <parentPagePath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the page path whose children you want to list"
+                        fieldLabel="Parent Page Path"
+                        name="./parentPagePath"
+                        rootPath="/content/geometrixx-media"
+                        xtype="pathfield"/>
+                </items>
+            </generalConfig>
+        </items>
+    </items>
+</jcr:root>

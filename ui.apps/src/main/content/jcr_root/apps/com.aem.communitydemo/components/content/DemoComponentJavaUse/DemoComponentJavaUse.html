@@ -1,0 +1,9 @@
+<div data-sly-use.demo="com.aem.community.core.models.DemoModel">
+    <div>
+    	<h1 style="font-color:${demo.color @ context='styleToken'}">${demo.title}</h1>
+        <p>${demo.description}</p>
+        ${demo.richText @ context='html'}
+    </div>
+</div>
+
+
